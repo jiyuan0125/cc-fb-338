@@ -1,0 +1,20 @@
+line,dev,ts,val,reason,ref_ts,delta_s,detail
+16,D04,1793490451,445,clock_rollback,1793491937,-1486,ts earlier than active session last_ts; no closed-session window match
+202,D03,1793508782,59,clock_rollback,1793509864,-1082,ts earlier than active session last_ts; no closed-session window match
+389,D01,1793527971,393,clock_rollback,1793539660,-11689,ts earlier than active session last_ts; no closed-session window match
+420,D05,1793540283,495,clock_rollback,1793540765,-482,ts earlier than active session last_ts; no closed-session window match
+726,D06,1793580276,101,clock_rollback,1793580545,-269,ts earlier than active session last_ts; no closed-session window match
+736,D01,1793579244,290,clock_rollback,1793580790,-1546,ts earlier than active session last_ts; no closed-session window match
+773,D04,1793583059,979,clock_rollback,1793594226,-11167,ts earlier than active session last_ts; no closed-session window match
+841,D02,1793595595,327,clock_rollback,1793595873,-278,ts earlier than active session last_ts; no closed-session window match
+916,D01,1793490150,325,clock_rollback,1793610874,-120724,ts earlier than active session last_ts; no closed-session window match
+1056,D03,1793614478,978,clock_rollback,1793626852,-12374,ts earlier than active session last_ts; no closed-session window match
+1120,D04,1793626945,892,clock_rollback,1793628334,-1389,ts earlier than active session last_ts; no closed-session window match
+1167,D05,1793629685,252,clock_rollback,1793641699,-12014,ts earlier than active session last_ts; no closed-session window match
+1188,D06,1793489417,829,clock_rollback,1793642506,-153089,ts earlier than active session last_ts; no closed-session window match
+1457,D01,1793669060,507,clock_rollback,1793681499,-12439,ts earlier than active session last_ts; no closed-session window match
+1498,D03,1793682262,813,clock_rollback,1793682579,-317,ts earlier than active session last_ts; no closed-session window match
+1588,D02,1793686804,740,clock_rollback,1793696377,-9573,ts earlier than active session last_ts; no closed-session window match
+1725,D05,1793489955,251,clock_rollback,1793712735,-222780,ts earlier than active session last_ts; no closed-session window match
+1785,D03,1793714516,2,clock_rollback,1793714546,-30,ts earlier than active session last_ts; no closed-session window match
+1883,D04,1793716397,737,clock_rollback,1793729532,-13135,ts earlier than active session last_ts; no closed-session window match

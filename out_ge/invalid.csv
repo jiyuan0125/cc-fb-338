@@ -1,0 +1,2 @@
+sid,dev,start,end,cnt,min,max,avg,state,nval,sum,reopen,cut_gap_s,cut_rule,start_iso,end_iso,reason
+D06-S006,D06,1793556388,1793558711,19,61,969,495.888889,closed,18,8926.0,0,20035,gap>=1800,2026-11-01T18:06:28Z,2026-11-01T18:45:11Z,missing_extremes

@@ -1,0 +1,40 @@
+{
+  "input": "/workspace/readings.jsonl",
+  "generated_at_utc": "2026-11-14T04:12:18Z",
+  "cut_seconds": 1800,
+  "cut_convention": "ge",
+  "cut_rule": "gap>=1800",
+  "boundary_note": "ge: gap == cut_seconds 的那一拍切断(恰满30分钟算切断); gt: gap == cut_seconds 的那一拍延续, 仅 gap 更大才切断",
+  "processing_order": "文件行序(到达顺序), 不做全局 ts 排序",
+  "rollback_rule": "ts < 活动会话 last_ts 且不命中任何已关闭会话窗口 -> clock_rollback, 不进聚合",
+  "reopen_rule": "回拨形态点的 ts 命中某已关闭会话 [start,end] -> 重开该会话, sid 沿用, 每批迟到点 reopen+1",
+  "missing_val_rule": "缺值点计入 cnt, 但 min/max/avg 不可算 -> 会话无效",
+  "avg_decimals": 6,
+  "sid_rule": "{dev}-S{该设备会话创建序号, 从1起, 三位补零}",
+  "state_values": [
+    "open (流结束时仍活动)",
+    "closed (已被静默切断)"
+  ],
+  "validity_elements": [
+    "start/end",
+    "cnt",
+    "min/max/avg",
+    "state"
+  ],
+  "counts": {
+    "input_lines": 1992,
+    "valid_sessions": 105,
+    "invalid_sessions": 1,
+    "anomaly_rows": 19,
+    "clock_rollback": 19,
+    "malformed_records": 0,
+    "reopen_events": 0,
+    "reopened_sessions": 0
+  },
+  "outputs": {
+    "session_csv": "/workspace/out_ge/session.csv",
+    "invalid_csv": "/workspace/out_ge/invalid.csv",
+    "anomaly_csv": "/workspace/out_ge/anomaly.csv",
+    "reopens_csv": "/workspace/out_ge/reopens.csv"
+  }
+}
